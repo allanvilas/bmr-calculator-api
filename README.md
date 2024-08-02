@@ -122,6 +122,8 @@ curl -X POST http://localhost:8080/api/calculate \
    5. Select "raw" and choose "JSON" from the dropdown.
    6. Copy and paste the example request body.
    7. Click "Send".
+   ![alt text](docs/img/postmanExample.png)
+   
 ### What is Mapped
 - Person: A model class representing user details (height, weight, age, gender, activity level).
 - ActivityLevel: An enum representing different levels of physical activity.
