@@ -16,7 +16,7 @@ public class BMRController {
     @Autowired
     private BMRService bmrService;
 
-    @PostMapping("/calculte")
+    @PostMapping(value = "/calculate")
     public String calculateBMRandTDEE(@RequestBody Person person){
         return bmrService.calculateBMRandTDEE(person);
     }

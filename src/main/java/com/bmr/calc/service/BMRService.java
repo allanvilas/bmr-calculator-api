@@ -3,10 +3,13 @@ package com.bmr.calc.service;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.stereotype.Service;
+
 import com.bmr.calc.model.Person;
 import com.bmr.calc.util.ActivityLevel;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+@Service
 public class BMRService {
 
     public String calculateBMRandTDEE(Person person){
