@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.wool.app.rest.models.User;
-
+import com.wool.app.rest.models.People;
 import com.wool.app.rest.repo.UserRepo;
+import com.wool.app.rest.repo.PeopleRepo;
 
 @RestController
 public class Controller {
