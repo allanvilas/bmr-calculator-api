@@ -1,5 +1,7 @@
 package com.wool.app.rest.models;
 
+import com.wool.app.rest.util.ActivityLevel;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -20,6 +22,20 @@ public class People {
     
     @Column
     private int age;
+
+    @Column
+    private boolean isWoman;
+
+    @Column
+    private ActivityLevel activityLevel;
+
+    public boolean isWoman() {
+        return isWoman;
+    }
+
+    public void setWoman(boolean isWoman) {
+        this.isWoman = isWoman;
+    }
 
     public long getId() {
         return id;

@@ -18,5 +18,22 @@ public class BmrController {
     @Autowired
     private PeopleRepo peopleRepo;
 
-    
+    @PostMapping(value = "/calculate")
+    public String CalculateBmr(@RequestBody People people) {
+        int add;
+        double height = people.getHeight() ;
+        double weight = people.getWeight();
+        double age = people.getAge();
+        
+        if(people.isWoman()) {
+            add = -161;
+        }
+        else {
+            add = 5;
+        }
+
+        double BMR = (10 * weight) + (6.25 * height) - (5 * age) + add;
+        
+        return Double.toString(BMR);
+    }
 }
